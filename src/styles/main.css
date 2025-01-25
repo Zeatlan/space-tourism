@@ -1,8 +1,88 @@
 @import "./_variables.css";
 
+@font-face {
+    font-family: "Bellefair";
+    src: url("/fonts/Bellefair-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url("/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-preset-1 {
     font-family: var(--font-family-primary);
-    font-size: var(--text-preset-1);
-    line-height: var(--text-preset-2);
-    color: var(--blue-900);
+    font-size: 174px;
+    line-height: 1.72; /* 171.9% */
+    letter-spacing: 0; /* Normal */
+}
+
+/* Text Preset 2 */
+.text-preset-2 {
+    font-family: var(--font-family-primary);
+    font-size: 100px;
+    line-height: 1.15; /* 114.6% */
+    letter-spacing: 0; /* Normal */
+}
+
+/* Text Preset 3 */
+.text-preset-3 {
+    font-family: var(--font-family-primary);
+    font-size: 56px;
+    line-height: 0.642; /* 64.2% */
+    letter-spacing: 0; /* Normal */
+}
+
+/* Text Preset 4 */
+.text-preset-4 {
+    font-family: var(--font-family-primary);
+    font-size: 32px;
+    line-height: 0.367; /* 36.7% */
+    letter-spacing: 0; /* Normal */
+}
+
+/* Text Preset 5 */
+.text-preset-5 {
+    font-family: var(--font-family-secondary);
+    font-size: 28px;
+    line-height: 0.336; /* 33.6% */
+    letter-spacing: 4px;
+    text-transform: uppercase; /* Optionnel selon le design */
+}
+
+/* Text Preset 6 */
+.text-preset-6 {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    line-height: 1.6; /* 160% */
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Optionnel */
+}
+
+/* Text Preset 7 */
+.text-preset-7 {
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    line-height: 1.8; /* 180% */
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Optionnel */
+}
+
+/* Text Preset 8 */
+.text-preset-8 {
+    font-family: var(--font-family-secondary);
+    font-size: 16px;
+    line-height: 1.92; /* 19.2% */
+    letter-spacing: 2px;
 }
