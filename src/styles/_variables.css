@@ -7,6 +7,7 @@
     /* Typography */
     --font-family-primary: "Bellefair", serif;
     --font-family-secondary: "Barlow Condensed", sans-serif;
+    --font-family-text: "Barlow", sans-serif;
 
     /* Spacing */
     --spacing-1600: 256px;

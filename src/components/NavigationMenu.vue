@@ -72,13 +72,37 @@ ul.menu {
 }
 
 ul.menu li {
+    position: relative;
     padding: var(--spacing-200) 0;
     cursor: pointer;
     list-style-type: none;
+    transition: all 0.3s ease-in-out;
 }
 
-ul.menu li.active {
-    border-bottom: 2px solid var(--blue-300);
+ul.menu li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--blue-300);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.menu li:hover:not(li.active)::before {
+    opacity: 0.7;
+}
+
+ul.menu li.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--blue-300);
 }
 
 ul.menu li a {

@@ -14,6 +14,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Barlow";
+    src: url("/fonts/Barlow-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
 html,
 body {
     margin: 0;
@@ -23,8 +30,8 @@ body {
 
 .text-preset-1 {
     font-family: var(--font-family-primary);
-    font-size: 174px;
-    line-height: 1.72; /* 171.9% */
+    font-size: 144px;
+    line-height: auto;
     letter-spacing: 0; /* Normal */
 }
 
@@ -85,4 +92,15 @@ body {
     font-size: 16px;
     line-height: 1.92; /* 19.2% */
     letter-spacing: 2px;
+}
+
+.text-preset-9 {
+    font-family: var(--font-family-text);
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0px;
+}
+
+.container {
+    margin: 0 var(--spacing-1600);
 }
