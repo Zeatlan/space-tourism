@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <button class="main-button">
+    <a href="/destination" class="main-button">
         <span class="text-preset-4"><slot /></span>
-    </button>
+    </a>
 </template>
 
 <style>
@@ -14,6 +14,8 @@
     border-radius: 100%;
     padding: var(--spacing-800) var(--spacing-400);
     cursor: pointer;
+    text-decoration: none;
+    color: var(--blue-900);
     transition: all 0.3s ease-in-out;
 }
 .main-button::before {

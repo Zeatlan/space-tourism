@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Planets from "../components/planet/Planets.vue";
+---
+
+<Layout>
+    <div class="container">
+        <div class="destination-wrapper">
+            <h2 class="text-preset-5"><span>01</span> Choisissez une destination</h2>
+
+            <Planets client:load />
+        </div>
+    </div>
+</Layout>
+
+<style>
+	body {
+		background-image: url("../assets/Render-2.png");
+		background-size: cover;
+	}
+    .destination-wrapper {
+        margin: var(--spacing-300) 0 0 0;
+    }
+    h2 {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-150);
+        text-transform: uppercase;
+        margin: var(--spacing-300) 0 var(--spacing-100) 0;
+    }
+
+    h2 span {
+        font-weight: 700;
+        opacity: 0.25;
+    }
+</style>
