@@ -1,0 +1,36 @@
+:root {
+    /* Colors */
+    --blue-900: hsl(230, 35%, 7%);
+    --blue-300: hsl(231, 77%, 90%);
+    --white: (0, 0%, 100%);
+
+    /* Typography */
+    --font-family-primary: "Bellefair", serif;
+    --font-family-secondary: "Barlow Condensed", sans-serif;
+
+    /* Presets Bellefair */
+    --text-preset-1: 174px/171.9%;
+    --text-preset-2: 100px/114.6%;
+    --text-preset-3: 56px/64.2%;
+    --text-preset-4: 32px/36.7%;
+
+    /* Presets Barlow Condensed */
+    --text-preset-5: 25px/33.6%;
+    --text-preset-6: 18px/180%;
+    --text-preset-7: 14px/15.6%;
+
+    /* Spacing */
+    --spacing-1600: 256px;
+    --spacing-1200: 192px;
+    --spacing-1000: 160px;
+    --spacing-800: 128px;
+    --spacing-600: 96px;
+    --spacing-500: 80px;
+    --spacing-400: 64px;
+    --spacing-300: 48px;
+    --spacing-200: 32px;
+    --spacing-150: 24px;
+    --spacing-100: 16px;
+    --spacing-50: 8px;
+    --spacing-25: 4px;
+}
