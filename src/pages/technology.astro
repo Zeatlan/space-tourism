@@ -1,0 +1,35 @@
+---
+import Technologies from "../components/technology/Technologies.vue";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="container tech-container">
+        <h2 class="text-preset-5"><span>03</span> Lancement spatial 101</h2>
+
+        <Technologies client:load />
+    </div>
+</Layout>
+
+<style>
+	body {
+		background-image: url("../assets/Render-4.png");
+		background-size: cover;
+	}
+
+    .tech-container {
+        margin: 0 0 0 var(--spacing-1600);
+    }
+    h2 {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-150);
+        text-transform: uppercase;
+        margin: var(--spacing-300) 0 var(--spacing-100) 0;
+    }
+
+    h2 span {
+        font-weight: 700;
+        opacity: 0.25;
+    }
+</style>
