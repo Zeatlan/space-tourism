@@ -12,7 +12,11 @@
     position: relative;
     background: var(--white);
     border-radius: 100%;
-    padding: var(--spacing-800) var(--spacing-400);
+    width: 272px;
+    height: 272px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     text-decoration: none;
     color: var(--blue-900);
@@ -42,5 +46,12 @@
 
 .main-button span {
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .main-button {
+        width: 180px;
+        height: 180px;
+    }
 }
 </style>

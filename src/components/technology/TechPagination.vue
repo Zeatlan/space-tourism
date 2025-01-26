@@ -53,4 +53,15 @@ ul {
     color: var(--blue-900);
     background: var(--white);
 }
+
+@media screen and (max-width: 1100px) {
+    ul {
+        flex-direction: row;
+    }
+    .tab-menu-item {
+        width: 56px;
+        height: 56px;
+
+    }
+}
 </style>

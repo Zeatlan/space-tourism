@@ -127,4 +127,35 @@ const handleCrewSelected = (index: number) => {
     background-image: url("../../assets/crews/anousheh-ansari.png");
     z-index: 15;
 }
+
+@media screen and (max-width: 1100px) {
+    .crew-wrapper {
+        flex-direction: column;
+        height: 75vh;
+    }
+    .crew-wrapper__left-pan {
+        width: 80%;
+        justify-content: start;
+        gap: var(--spacing-300);
+    }
+    .left-pan__introduction {
+        padding: var(--spacing-200) 0 0 0;
+        text-align: center;
+    }
+    .crew-pagination {
+        justify-content: center;
+    }
+    .crew-wrapper__right-pan {
+        width: 80%;
+    }
+    .crew-image {
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .crew-pagination {
+        margin-bottom: var(--spacing-200);
+    }
+}
 </style>

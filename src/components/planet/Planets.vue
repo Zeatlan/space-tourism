@@ -79,6 +79,7 @@ const handlePlanetSelected = (index: number) => {
         width: 481px;
         height: 480px;
         opacity: 0;
+        background-size: cover;
         transition: all 0.3s ease-in-out;
     }
     .planet-img.active {
@@ -100,5 +101,43 @@ const handlePlanetSelected = (index: number) => {
 
     .planet-container__right {
         width: 50%;
+    }
+
+    @media screen and (max-width: 1100px) {
+        .planet-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-400);
+            padding: var(--spacing-100) var(--spacing-200);
+        }
+        .planet-container__left {
+            height: 300px;
+        }
+        .planet-container__left .planet-img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .planet-container__right {
+            width: 75%;
+            text-align: center;
+        }
+        ul.tab-menu {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .planet-container__left {
+            height: 150px;
+        }
+        .planet-container__left .planet-img {
+            width: 150px;
+            height: 150px;
+        }
+        .planet-container__right {
+            width: 100%;
+        }
     }
 </style>

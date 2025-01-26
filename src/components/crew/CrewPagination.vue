@@ -16,7 +16,7 @@ const clickHandler = (index: number) => {
 </script>
 
 <template>
-    <ul>
+    <ul class="crew-pagination">
         <li v-for="(item, index) in crews" :key="index" class="tab-menu-item" :class="{ active: index === activeIndex }" @click="clickHandler(index)"></li>
     </ul>
 </template>
@@ -46,5 +46,15 @@ ul {
 }
 .tab-menu-item:not(.active):hover {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 1100px) {
+    ul {
+        gap: var(--spacing-200);
+    }
+    .tab-menu-item {
+        width: 10px;
+        height: 10px;
+    }
 }
 </style>

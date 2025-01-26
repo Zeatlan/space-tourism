@@ -62,4 +62,13 @@ const getTime = computed(() => props.planets[props.currentPlanetIndex]?.time);
     .planet-container__right-stats-item p {
         margin-bottom: var(--spacing-50);
     }
+    @media screen and (max-width: 1100px) {
+        .line {
+            display: block;
+            margin: var(--spacing-200) 0;
+        }
+        .planet-container__right-stats-item h3 {
+            font-size: 32px;
+        }
+    }
 </style>

@@ -77,6 +77,10 @@ const handleTechSelected = (index: number) => {
         margin: var(--spacing-200) 0 var(--spacing-100) 0;
     }
 
+    .left-pan__introduction p {
+        color: var(--blue-300);
+    }
+
     .tech-wrapper__right-pan {
         position: relative;
         width: 50%;
@@ -111,5 +115,51 @@ const handleTechSelected = (index: number) => {
         background-image: url("../../assets/techs/space-capsule.png");
         background-repeat: no-repeat;
         z-index: 10;
+    }
+
+    @media screen and (max-width: 1100px) {
+        .tech-wrapper {
+            flex-direction: column-reverse;
+            padding: 0;
+            gap: 0;
+        }
+
+        .tech-wrapper__left-pan {
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+            padding: 0;
+        }
+        .tech-wrapper__right-pan {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            margin-top: var(--spacing-600);
+        }
+
+        .tech-image {
+            background-size: cover;
+        }
+
+        .tech-wrapper__left-pan {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: var(--spacing-400);
+            width: 80%;
+            padding: var(--spacing-400) 0;
+        }
+        .left-pan__introduction h2 {   
+            font-size: 56px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .left-pan__introduction h2 {   
+            font-size: 40px;
+        }
+        .left-pan__introduction p {
+            font-size: 14px;
+        }
     }
 </style>

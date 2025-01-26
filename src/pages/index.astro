@@ -1,9 +1,6 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
@@ -12,7 +9,21 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
 	body {
+		position: relative;
+		overflow: hidden;
+		background-size: cover;
+	}
+	body::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		background-image: url("../assets/Render-1.png");
 		background-size: cover;
+		background-position: center;
+		z-index: -1;
+		transform-origin: center;
 	}
 </style>
