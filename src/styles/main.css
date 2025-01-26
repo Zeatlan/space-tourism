@@ -57,7 +57,7 @@ body {
 .text-preset-3 {
     font-family: var(--font-family-primary);
     font-size: 56px;
-    line-height: 0.642; /* 64.2% */
+    line-height: auto;
     font-weight: 400;
     letter-spacing: 0; /* Normal */
 }
