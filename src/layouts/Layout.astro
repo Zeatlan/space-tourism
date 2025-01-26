@@ -1,6 +1,14 @@
 ---
 import '../styles/main.css';
 import NavigationMenu from '../components/NavigationMenu.vue';
+
+const menu = [
+	{ name: 'Accueil', href: "/" },
+	{ name: 'Destination', href: "/destination" },
+	{ name: 'Équipage', href: "/crew" },
+	{ name: 'Technologie', href: "/technology" },
+]
+
 ---
 <!doctype html>
 <html lang="en">
@@ -12,7 +20,7 @@ import NavigationMenu from '../components/NavigationMenu.vue';
 		<title>Tourisme Spatiale</title>
 	</head>
 	<body>
-		<NavigationMenu client:load menu={['Accueil', 'Destination', 'Équipage', 'Technologie']} />
+		<NavigationMenu client:load menu={menu} /> 
 		<slot />
 	</body>
 </html>

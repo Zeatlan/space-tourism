@@ -1,32 +1,45 @@
 <script setup lang='ts'>
-import { ref } from 'vue';
+import { ref, onMounted, watch } from 'vue';
 
-defineProps({
-    menu: Array<String>,
+const props = defineProps({
+    menu: Array<Object>,
 });
 
-const activeIndex = ref(0);
+const activeMenu = ref("Accueil");
 
 const formattedIndex = (index: number): string => {
     return "0" + index;
 }
 
-const handleClick = (index: number) => {
-    activeIndex.value = index;
+const handleClick = (item: String) => {
+    activeMenu.value = item;
 };
+
+const setActiveIndexFromURL = () => {
+    const currentURL = window.location.pathname;
+    const matchingID = props.menu!.find(item => item.href === currentURL);
+
+    if(matchingID !== -1) {
+        activeMenu.value = matchingID.name;
+    }
+};
+
+onMounted(() => {
+    setActiveIndexFromURL();
+});
 </script>
 
 <template>
     <nav aria-label="Main navigation">
         <div class="left-pan">
-            <img src="/assets/Logo.png" alt="Logo"/>
+           <a href="/"><img src="/assets/Logo.png" alt="Logo"/></a>
 
             <div class="line">&nbsp;</div>
         </div>
 
         <ul class="menu">
-            <li v-for="(item, index) in menu" :key="index" :class="{ active: index === activeIndex }" @click="handleClick(index)">
-                <a class="text-preset-8" href="#"><span>{{ formattedIndex(index) }}</span> {{ item }}</a>
+            <li v-for="(item, index) in menu" :key="index" :class="{ active: item.name === activeMenu }" @click="handleClick(item.name)">
+                <a class="text-preset-8" :href="item.href"><span>{{ formattedIndex(index) }}</span> {{ item.name }}</a>
             </li>
         </ul>
     </nav>
