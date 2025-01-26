@@ -6,18 +6,18 @@ const selectedTech = ref(0);
 
 const techs = [
     {
-        title: "Launch vehicle",
-        description: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+        title: "Véhicule de lancement",
+        description: "Un véhicule de lancement ou une fusée porteuse est un véhicule propulsé par une fusée utilisé pour transporter une charge utile de la surface de la Terre vers l'espace, généralement vers l'orbite terrestre ou au-delà. Notre fusée porteuse WEB-X est la plus puissante en service. Avec ses 150 mètres de haut, elle est impressionnante sur le pas de tir !",
         image: "launch-vehicle.png"
     },
     {
-        title: "Spaceport",
-        description: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
+        title: "Port spatial",
+        description: "Un port spatial ou cosmodrome est un site de lancement (ou de réception) d'engins spatiaux, par analogie avec le port maritime pour les navires ou l'aéroport pour les avions. Basé au célèbre Cap Canaveral, notre port spatial est idéalement situé pour profiter de la rotation de la Terre pour le lancement.",
         image: "spaceport.png"
     },
     {
-        title: "Space capsule",
-        description: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained.",
+        title: "Capsule Spatiale",
+        description: "Une capsule spatiale est un vaisseau spatial souvent doté d'un équipage qui utilise une capsule de rentrée à corps contondant pour rentrer dans l'atmosphère terrestre sans ailes. C'est dans notre capsule que vous passerez votre temps pendant le vol. Elle comprend une salle de gymnastique spatiale, un cinéma et de nombreuses autres activités pour vous divertir.",
         image: "space-capsule.png"
     }
 ];

@@ -6,27 +6,27 @@ const selectedCrew = ref(0);
 
 const crews = [
     {
-        title: "Commander",
+        title: "Commandant",
         name: "Douglas Hurley",
-        description: "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.",
+        description: "Douglas Gerald Hurley est un ingénieur américain, ancien pilote du corps des Marines et ancien astronaute de la NASA. Il s'est envolé dans l'espace pour la troisième fois en tant que commandant de Crew Dragon Demo-2.",
         image: "douglas-hurley.png"
     },
     {
-        title: "Mission Specialist",
+        title: "Spécialiste des missions",
         name: "Mark Shuttleworth",
-        description: "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+        description: "Mark Richard Shuttleworth est le fondateur et le PDG de Canonical, la société à l'origine du système d'exploitation Ubuntu basé sur Linux. Shuttleworth est devenu le premier Sud-Africain à se rendre dans l'espace en tant que touriste spatial.",
         image: "mark-shuttleworth.png"
     },
     {
-        title: "Pilot",
+        title: "Pilote",
         name: "Victor Glover",
-        description: "Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer. ",
+        description: "Pilote du premier vol opérationnel de la capsule SpaceX Crew Dragon vers la Station spatiale internationale. Glover est commandant dans la marine américaine où il pilote un F/A-18. Il a été membre de l'équipage de l'Expédition 64, et a servi en tant qu'ingénieur de vol des systèmes de la station. ",
         image: "victor-glover.png"
     },
     {
-        title: "Flight Engineer",
+        title: "Mécanicienne de bord",
         name: "Anousheh Ansari",
-        description: "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space. ",
+        description: "Anousheh Ansari est une ingénieure irano-américaine, cofondatrice de Prodea Systems. Ansari a été la quatrième touriste spatial autofinancé, la première femme autofinancée à se rendre à l'ISS et la première Iranienne dans l'espace.", 
         image: "anousheh-ansari.png"
     }
 ]
