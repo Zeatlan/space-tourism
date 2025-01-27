@@ -20,8 +20,10 @@ const handleClick = (item: String) => {
 };
 
 const setActiveIndexFromURL = () => {
-    const currentURL = window.location.pathname;
-    const matchingID = props.menu!.find(item => item.href === currentURL);
+    const currentURL = window.location.pathname.split("/").filter(Boolean).pop();
+    const matchingID = props.menu!.find(item => {
+        return item.href.split("/").filter(Boolean).pop() === currentURL
+    });
 
     if(matchingID !== -1) {
         activeMenu.value = matchingID.name;
