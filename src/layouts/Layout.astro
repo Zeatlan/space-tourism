@@ -3,10 +3,10 @@ import '../styles/main.css';
 import NavigationMenu from '../components/NavigationMenu.vue';
 
 const menu = [
-	{ name: 'Accueil', href: "/" },
-	{ name: 'Destination', href: "/destination" },
-	{ name: 'Équipage', href: "/crew" },
-	{ name: 'Technologie', href: "/technology" },
+	{ name: 'Accueil', href: import.meta.env.BASE_URL },
+	{ name: 'Destination', href: import.meta.env.BASE_URL + "/destination" },
+	{ name: 'Équipage', href: import.meta.env.BASE_URL + "/crew" },
+	{ name: 'Technologie', href: import.meta.env.BASE_URL + "/technology" },
 ]
 
 ---
@@ -15,12 +15,12 @@ const menu = [
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={import.meta.env.BASE_URL + "/favicon.svg"} />
 		<meta name="generator" content={Astro.generator} />
 		<title>Tourisme Spatiale</title>
 	</head>
 	<body>
-		<NavigationMenu client:load menu={menu} /> 
+		<NavigationMenu client:load menu={menu} baseUrl={import.meta.env.BASE_URL} /> 
 		<slot />
 	</body>
 </html>

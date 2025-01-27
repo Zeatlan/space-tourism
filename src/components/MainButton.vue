@@ -1,8 +1,11 @@
 <script setup lang='ts'>
+defineProps({
+    baseUrl: String,
+})
 </script>
 
 <template>
-    <a href="/destination" class="main-button">
+    <a :href="`${baseUrl}/destination`" class="main-button">
         <span class="text-preset-4"><slot /></span>
     </a>
 </template>

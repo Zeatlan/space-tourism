@@ -4,6 +4,7 @@ import MobileNavigationMenu from './MobileNavigationMenu.vue';
 
 const props = defineProps({
     menu: Array<Object>,
+    baseUrl: String,
 });
 
 const activeMenu = ref("Accueil");
@@ -45,7 +46,7 @@ onMounted(() => {
 <template>
     <nav aria-label="Main navigation">
         <div class="left-pan">
-           <a href="/"><img src="/assets/Logo.png" alt="Logo" class="logo" /></a>
+           <a :href="baseUrl"><img :src="`${baseUrl}/assets/Logo.png`" alt="Logo" class="logo" /></a> 
 
             <div class="line">&nbsp;</div>
         </div>
