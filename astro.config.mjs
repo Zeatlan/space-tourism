@@ -7,5 +7,5 @@ import vue from "@astrojs/vue";
 export default defineConfig({
     integrations: [vue()],
     site: "https://zeatlan.github.io",
-    base: "space-tourism",
+    base: "/space-tourism",
 });
